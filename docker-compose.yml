@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+     - "8080:8080"
+    volumes:
+#    - archiva-data:/opt/archiva/2.1.1/archiva-data
+     - ./archiva-data:/opt/archiva/2.1.1/archiva-data
+#volumes:
+#  archiva-data:./archiva-data
+
